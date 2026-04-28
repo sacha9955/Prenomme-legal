@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Politique de confidentialité — Prénomme</title>
+<style>
+:root{--accent:#c97a64;--bg:#fdf6f1;--text:#2a1f1c;--muted:#6b5e58}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro",sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+.container{max-width:720px;margin:0 auto;padding:48px 24px}
+.back{display:inline-block;margin-bottom:24px;color:var(--accent);text-decoration:none;font-size:14px}
+.back:hover{text-decoration:underline}
+h1{font-size:30px;margin:0 0 8px;font-weight:700}
+.tag{color:var(--muted);font-size:14px;margin-bottom:32px}
+h2{margin:36px 0 12px;font-size:20px;color:var(--accent)}
+h3{margin:20px 0 8px;font-size:16px}
+p,li{font-size:15px;color:var(--text)}
+ul{padding-left:20px}
+strong{color:var(--text)}
+table{width:100%;border-collapse:collapse;margin:16px 0}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid rgba(0,0,0,.08);font-size:14px}
+th{color:var(--muted);font-weight:600}
+footer{margin-top:48px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="container">
+<a class="back" href="index.html">← Retour</a>
+<h1>Politique de confidentialité</h1>
+<p class="tag">Dernière mise à jour : 28 avril 2026 — Version 1.0</p>
+
+<p>Prénomme respecte votre vie privée. Cette politique explique quelles informations sont traitées par l'application iOS « Prénomme » (ci-après « l'Application »), comment elles sont utilisées, et vos droits.</p>
+
+<h2>1. Éditeur</h2>
+<p><strong>Sacha Ochmiansky</strong><br>
+Contact : <a href="mailto:sacha.ochmiansky@gmail.com">sacha.ochmiansky@gmail.com</a><br>
+Identifiant Apple Developer : Y9U6L9TB4B</p>
+
+<h2>2. Données traitées</h2>
+<p>Prénomme est conçue avec une approche <strong>privacy-first</strong>. L'Application ne collecte et ne transmet <strong>aucune donnée personnelle</strong> vers des serveurs distants contrôlés par l'éditeur.</p>
+
+<h3>2.1 Données stockées localement sur votre appareil</h3>
+<table>
+<tr><th>Donnée</th><th>Finalité</th><th>Stockage</th></tr>
+<tr><td>Liste de favoris (prénoms)</td><td>Fonctionnalité de l'application</td><td>Local + iCloud (CloudKit) si activé</td></tr>
+<tr><td>Préférences de filtrage</td><td>Personnalisation</td><td>Local (UserDefaults)</td></tr>
+<tr><td>Historique des swipes</td><td>Compteur quotidien</td><td>Local</td></tr>
+<tr><td>Statut Pro (achat)</td><td>Déverrouillage Pro</td><td>Local + Apple ID (StoreKit)</td></tr>
+</table>
+
+<h3>2.2 Synchronisation iCloud (optionnelle)</h3>
+<p>Si vous activez la synchronisation iCloud dans les Réglages iOS, vos favoris sont synchronisés via <strong>CloudKit</strong> (service Apple) entre vos appareils. Ces données restent dans votre compte iCloud personnel, chiffrées par Apple, et ne sont jamais accessibles à l'éditeur.</p>
+
+<h2>3. Données collectées par Apple (achats intégrés)</h2>
+<p>Lorsque vous achetez Prénomme Pro (à vie, mensuel ou annuel), la transaction est gérée par <strong>Apple via StoreKit</strong>. L'éditeur reçoit uniquement :</p>
+<ul>
+<li>Une confirmation anonymisée de l'achat (ID transaction)</li>
+<li>Des rapports financiers agrégés via App Store Connect</li>
+</ul>
+<p>L'éditeur n'a accès ni à votre Apple ID, ni à votre adresse email, ni à votre carte bancaire. La politique de confidentialité d'Apple s'applique : <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a>.</p>
+
+<h2>4. Données NON collectées</h2>
+<p>L'Application <strong>ne collecte pas</strong> :</p>
+<ul>
+<li>Pas de compte utilisateur ni de connexion</li>
+<li>Pas d'identifiant publicitaire (IDFA)</li>
+<li>Pas de localisation</li>
+<li>Pas de données analytiques tierces (pas de Firebase, Google Analytics, etc.)</li>
+<li>Pas de cookies, pas de pixels de tracking</li>
+<li>Pas de données de santé, contacts, photos, micro, ou caméra</li>
+</ul>
+
+<h2>5. Tiers</h2>
+<p>L'Application n'intègre <strong>aucun SDK tiers de tracking ou d'analyse</strong>. Les seules dépendances externes sont :</p>
+<ul>
+<li><strong>Apple StoreKit</strong> — gestion des achats (obligatoire iOS)</li>
+<li><strong>Apple CloudKit</strong> — synchronisation iCloud optionnelle (uniquement si activée par l'utilisateur)</li>
+<li><strong>GRDB</strong> — bibliothèque locale pour la base de données SQLite (open-source, ne communique avec aucun serveur)</li>
+</ul>
+
+<h2>6. Données des prénoms</h2>
+<p>La base de données des prénoms est embarquée dans l'application (fichier local SQLite). Sources :</p>
+<ul>
+<li><strong>INSEE</strong> — Fichier des prénoms 2024 (licence ouverte Etalab 2.0)</li>
+<li><strong>SSA</strong> (Social Security Administration, États-Unis) — Données publiques</li>
+<li><strong>Wikidata</strong> — Licence CC0</li>
+<li>Étymologies générées et vérifiées par l'éditeur</li>
+</ul>
+
+<h2>7. Droits (RGPD)</h2>
+<p>Comme aucune donnée personnelle n'est collectée par l'éditeur, les droits RGPD s'exercent directement depuis votre appareil :</p>
+<ul>
+<li><strong>Accès</strong> — toutes vos données sont visibles dans l'app (favoris, historique)</li>
+<li><strong>Suppression</strong> — désinstallez l'app pour effacer toutes les données locales ; videz votre conteneur iCloud depuis Réglages iOS → Apple ID → iCloud → Gérer le stockage du compte → Prénomme</li>
+<li><strong>Portabilité</strong> — utilisez la fonction « Export PDF » (Pro) pour récupérer vos favoris</li>
+</ul>
+
+<h2>8. Sécurité</h2>
+<p>Les données sont stockées dans le sandbox de l'application protégé par iOS. Les données iCloud sont chiffrées par Apple en transit et au repos.</p>
+
+<h2>9. Enfants</h2>
+<p>L'application a une classification <strong>4+</strong> et ne collecte aucune donnée. Elle peut être utilisée par toute personne, y compris dans un contexte familial.</p>
+
+<h2>10. Modifications</h2>
+<p>Cette politique peut évoluer. La version en vigueur est toujours celle accessible à <a href="https://sacha9955.github.io/prenomme-legal/privacy.html">sacha9955.github.io/prenomme-legal/privacy.html</a>. La date de dernière mise à jour figure en haut du document.</p>
+
+<h2>11. Contact</h2>
+<p>Pour toute question relative à cette politique : <a href="mailto:sacha.ochmiansky@gmail.com?subject=Prénomme%20-%20Confidentialité">sacha.ochmiansky@gmail.com</a></p>
+
+<footer>© 2026 Sacha Ochmiansky — Prénomme</footer>
+</div>
+</body>
+</html>
