@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prénomme — Assistance</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #fafaf7;
+            --surface: #fff;
+            --text: #1a1a1a;
+            --text-secondary: #555;
+            --brand: #c97a64;
+            --hairline: #e5e5e0;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0a0a0a;
+                --surface: #1c1c1e;
+                --text: #f0f0f0;
+                --text-secondary: #a8a8a8;
+                --brand: #e8a08c;
+                --hairline: #2c2c2e;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+        header { text-align: center; margin-bottom: 48px; }
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin: 0 0 8px;
+            letter-spacing: -0.5px;
+        }
+        .tagline { color: var(--text-secondary); font-size: 16px; }
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--hairline);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 0 12px;
+            color: var(--text);
+        }
+        p { margin: 8px 0; color: var(--text-secondary); }
+        a.btn {
+            display: inline-block;
+            background: var(--brand);
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-top: 12px;
+            transition: opacity 0.2s;
+        }
+        a.btn:hover { opacity: 0.85; }
+        a { color: var(--brand); text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+        ul { padding-left: 20px; }
+        li { color: var(--text-secondary); margin: 6px 0; }
+        footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 13px;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--hairline);
+        }
+        footer a { margin: 0 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Prénomme — Assistance</h1>
+            <p class="tagline">Trouvez le prénom qui lui ressemble déjà.</p>
+        </header>
+
+        <div class="card">
+            <h2>📧 Nous contacter</h2>
+            <p>Une question, un bug, une suggestion ? Écrivez-nous, nous répondons sous 48 h.</p>
+            <a class="btn" href="mailto:sacha.ochmiansky@gmail.com?subject=Pr%C3%A9nomme%20Support">
+                sacha.ochmiansky@gmail.com
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>❓ Questions fréquentes</h2>
+            <p><strong>L'app fonctionne-t-elle hors-ligne ?</strong><br>
+            Oui, totalement. Tous les prénoms sont stockés dans l'application.</p>
+
+            <p><strong>Comment passer à la version Pro ?</strong><br>
+            Réglages → "Passer à Pro", ou en tapant n'importe quelle fonctionnalité Pro verrouillée.</p>
+
+            <p><strong>Comment restaurer mes achats sur un nouvel appareil ?</strong><br>
+            Réglages → "Restaurer les achats" (avec votre Apple ID).</p>
+
+            <p><strong>Comment résilier un abonnement ?</strong><br>
+            Réglages iOS → votre Apple ID → Abonnements → Prénomme Pro → Annuler.</p>
+
+            <p><strong>Mes favoris sont-ils synchronisés entre mes appareils ?</strong><br>
+            Oui, automatiquement via iCloud (si vous êtes connecté avec le même Apple ID).</p>
+        </div>
+
+        <div class="card">
+            <h2>🔒 Confidentialité</h2>
+            <p>Prénomme ne collecte aucune donnée personnelle. Aucun tracker, aucune publicité, aucun partage tiers.</p>
+            <ul>
+                <li><a href="privacy.html">Politique de confidentialité</a></li>
+                <li><a href="terms.html">Conditions d'utilisation</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            © 2026 Sacha Ochmiansky · Tous droits réservés
+            <br>
+            <a href="privacy.html">Confidentialité</a> ·
+            <a href="terms.html">Conditions</a>
+        </footer>
+    </div>
+</body>
+</html>
